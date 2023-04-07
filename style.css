@@ -1,0 +1,93 @@
+/* Custom styles for meal app */
+
+/* Navigation */
+nav {
+  background-color: #343a40;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Search */
+#searchForm {
+  margin-bottom: 1rem;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 2px solid #333;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Search results */
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Meal card */
+.card {
+  margin-bottom: 1rem;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body button {
+  margin-top: 0.5rem;
+}
+
+/* Favourites */
+#favouritesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #searchResults {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
